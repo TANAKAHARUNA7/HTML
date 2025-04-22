@@ -1,0 +1,37 @@
+@charset "utf-8";
+.parent > 
+/*memo*/
+div{/*間隔*/
+    margin-bottom: 200px;
+    margin-top: 200px; 
+    /* margin-right: 200px; */
+
+    width: calc(100% - 50px);
+    height: 100px;
+    background-color: #000;
+    transform: translate(-100px, 30px) rotate(90deg)skew(70deg);
+}
+
+p{
+    color: rgba(27, 189, 27, 0.705);
+    background-image: url("./haechan3.png");
+    /* background-color: blue; */
+    font-weight: bold;
+    font-size: 80px;
+    text-indent: 1em;
+    line-height: 1.8;
+}
+
+.text{
+    color: green;
+}
+
+#text {
+    color: red;
+}
+
+a:hover{ /*:~ 疑似classセレクタ*/
+    color: red;
+}
+
+

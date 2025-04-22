@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML練習</title>
+</head>
+<body>
+    <!--1. テキスト関連の要素-->
+    <h1>タイトルタグ</h1>
+    <p>改行するタグ</p>
+    <p><strong>改行しつつ太字のテキスト</strong>と <em>斜体のテキスト</em>使用</p>
+    <p>改行するために<br>タグを使用するとこうなる</p>
+    <hr><!--下線-->
+
+    <!--2. フォーム関連の要素-->
+    <h2>フォーム要素</h2>
+    <form action="#" method="post">
+        <!--テキスト入力-->
+        <label for="username">名前：</label>
+        <input type="text" id="username" name="username" placeholder="名前を入力してください" required>
+        <br><br>
+
+        <!--メール入力-->
+        <label for="email">メール</label>
+        <input type="email" id="username" name="username" placeholder="メールアドレスを入力してください">
+        <br><br>
+
+        <!--数値入力-->
+        <label for="age">年齢：</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <br><br>
+
+        <!--ドロップダウン-->
+        <label for="gender">性別：</label>
+        <select id="gender" name="gender">
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            <option value="other">その他</option>
+        </select>
+        <br><br>
+
+        <!--テキストエリア-->
+        <label for="comments">コメント：</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="内容を入力してください"></textarea>
+        <br><br>
+
+        <!--3. チェックボックス-->
+        <h3>チェックボックス</h3>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">利用規約に同意します</label>
+        <br><br>
+
+        <!--4. ボタン-->
+        <button type="submit">送信</button>
+        <button type="reset">リセット</button>
+    </form>
+</body>
+</html>
