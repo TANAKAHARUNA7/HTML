@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="このページはHTML構造を説明します">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="私の初めてのウェブページ">
+    <title>Document</title>  
+    
+</head>
+<body>
+    <h1>hello</h1>
+    <p>world</p>
+
+    <script>
+        // ルートノード : <html>
+        const rootNode = document.documentElement;
+        console.log("🌜Root node name:", rootNode.nodeName);
+        console.log("😥Root node type:", rootNode.nodeType);
+        console.log("😔Root node clild🌜Nodes:", rootNode.childNodes);
+
+        // <body>ノード
+        const bodyNode = document.body;
+        console.log("bodyの親: ", bodyNode.parentNode.nodeName);
+
+        // 親ー子供関係比較
+        if (rootNode === bodyNode.parentNode)
+        console.log("bodyの親はrootNode(html)です");
+        else
+        console.log("違うノードです")
+    </script>
+</body>
+</html>
