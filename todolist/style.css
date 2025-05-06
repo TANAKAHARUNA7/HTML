@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+
+body { 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #F5F5F5;
+    min-height: 100%;
+}
+
+.todo-wrapper {
+    justify-content: center;
+    margin-top: 3rem;
+    min-width: 600px;
+}
+
+.todo-title {
+    padding: 2rem;
+    text-align: center;
+    color: rosybrown;
+    font-size: 5rem;
+}
+
+.todo-box {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.todo-input-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 3rem;
+    border-bottom: 1px solid #ddd;
+    justify-content: flex-start;
+    align-items: center;
+}
+

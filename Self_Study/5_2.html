@@ -5,29 +5,35 @@
     <meta name="description" content="このページはHTML構造を説明します">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="私の初めてのウェブページ">
-    <title>Document</title>  
+    <title>DOM Tree Sibling</title>  
     
 </head>
 <body>
-    <h1>hello</h1>
+    <h1 id="start-point">hello</h1>
     <p>world</p>
+    <span>こんにちは</span>
 
     <script>
-        // ルートノード : <html>
-        const rootNode = document.documentElement;
-        console.log("🌜Root node name:", rootNode.nodeName);
-        console.log("😥Root node type:", rootNode.nodeType);
-        console.log("😔Root node clild🌜Nodes:", rootNode.childNodes);
+        // h1要素ノード選択
+        const h1 = document.getElementById('start-point');
 
-        // <body>ノード
-        const bodyNode = document.body;
-        console.log("bodyの親: ", bodyNode.parentNode.nodeName);
+        // h1の次の現在のノード（列を変えるテキストノード）
+        console.log(h1.nextSibling.nodeName); //p
 
-        // 親ー子供関係比較
-        if (rootNode === bodyNode.parentNode)
-        console.log("bodyの親はrootNode(html)です");
-        else
-        console.log("違うノードです")
+        // h1次の次の現在のノード　-> 実際のp要素
+        console.log(h1.nextSibling.nextSibling.nodeName);
+
+        // p要素ノード保存
+        const p = h1.nextSibling.nextSibling;
+
+        // pの次の兄弟ノード
+        console.log(p.nextSibling.nodeName); //text
+
+        // pの次の次のノード -> 実際span要素
+        console.log(p.nextSibling.nextSibling.nodeName); //SPAN
+
+        // pの前の前の兄弟ノード　-> 実際h1要素
+        console.log(p.previousSibling.previousSibling.nodeName);
     </script>
 </body>
 </html>
