@@ -4,16 +4,16 @@ html {
 
 body { 
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: #F5F5F5;
-    min-height: 100%;
+    flex-wrap: nowrap; /*折り返しなし（1行固定）*/
+    justify-content: center; /* 横方向に中央ぞろえ */
+    background-color: #F5F5F5; /* 背景色 */
+    min-height: 100%; /* 親と同じ高さに固定 */
 }
 
 .todo-wrapper {
     justify-content: center;
     margin-top: 3rem;
-    min-width: 600px;
+    min-width: 600px; /* *画面が小さくても最低600pxは維持してね*/
 }
 
 .todo-title {
