@@ -1,0 +1,16 @@
+body {
+    font-family: 'Zen Gothic New' , sans-serif;
+    color: #ffffff;
+    background-color: #16161A;
+}
+
+header {
+    font-weight :700; 
+}
+
+header .container {
+    max-width: 1080px; /* 最大幅は1080pxまで */
+    width: 90%;        /* 画面幅の90%を使用（可変） */
+    margin: 0 auto;    /* 上下：0、左右：自動 → 中央寄せ */
+    background-color: aquamarine;
+}
