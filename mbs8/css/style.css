@@ -1,0 +1,42 @@
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  background-color: #e3f6f5;
+}
+
+.section {
+    padding: 100px 0;
+    
+}
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section h3 {
+    font-size: 24px;
+    color: dodgerblue;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.text {
+    line-height: 1.6;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    border: solid black 3px;
+    background-color: white;
+    margin: 0 auto 24px;
+    padding: 30px 60px;
+}
+
+.col:first-child { /*1つめのcolだけ適応する*/
+    width: 20%;
+}
+.col:last-child{ /*最後のcolだけ適応する*/
+    width: 70%;
+}
