@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    background-color:azure;
+    margin: 0 auto;
+}
+
+.container .card {
+    width: 140px;
+    height: 190px;
+    border: 0.2px solid red;
+    margin: 5px;
+    border-radius: 3%;
+}
+.container .card .img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .card:hover {
+    transform: scale(1.2);
+    transition: .1s;
+    z-index: 10;
+}
+
+.card:nth-child(1) .img {background-image: url("../images/cardDiamondsA.png");}
+.card:nth-child(2) .img {background-image: url("../images/cardDiamonds2.png");}
+.card:nth-child(3) .img {background-image: url("../images/cardDiamonds3.png");}
+.card:nth-child(4) .img {background-image: url("../images/cardDiamonds4.png");}
+.card:nth-child(5) .img {background-image: url("../images/cardDiamonds5.png");}
+.card:nth-child(6) .img {background-image: url("../images/cardDiamonds6.png");}
+.card:nth-child(7) .img {background-image: url("../images/cardDiamonds7.png");}
+.card:nth-child(8) .img {background-image: url("../images/cardDiamonds8.png");}
+.card:nth-child(9) .img {background-image: url("../images/cardDiamonds9.png");}
+.card:nth-child(10) .img {background-image: url("../images/cardDiamonds10.png");}
+.card:nth-child(11) .img {background-image: url("../images/cardDiamondsJ.png");}
+.card:nth-child(12) .img {background-image: url("../images/cardDiamondsQ.png");}
+.card:nth-child(13) .img {background-image: url("../images/cardDiamondsK.png");}

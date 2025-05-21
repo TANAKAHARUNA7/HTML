@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(9, 112, 16);
+    max-width: 90vw;
+    margin: 30px auto;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    perspective: 1000px;
+}
+.inner {
+    max-width: inherit;
+    width: 142px;
+    height: 192px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+.card-front {
+    background-image: url("../images/cardBack_blue3.png");
+    background-size: cover;
+}
+.noA .card-back {
+    background-image: url("../images/cardSpadesA.png");
+}
+.no2 .card-back {
+    background-image: url("../images/cardSpades2.png");
+}
+.no3 .card-back {
+    background-image: url("../images/cardSpades3.png");
+}
+.no4 .card-back {
+    background-image: url("../images/cardSpades4.png");
+}
+.no5 .card-back {
+    background-image: url("../images/cardSpades5.png");
+}
+.no6 .card-back {
+    background-image: url("../images/cardSpades6.png");
+}
+.no7 .card-back {
+    background-image: url("../images/cardSpades7.png");
+}
+.no8 .card-back {
+    background-image: url("../images/cardSpades8.png");
+}
+.no9 .card-back {
+    background-image: url("../images/cardSpades9.png");
+}
+.no10 .card-back {
+    background-image: url("../images/cardSpades10.png");
+}
+.noJ .card-back {
+    background-image: url("../images/cardSpadesJ.png");
+}
+.noQ .card-back {
+    background-image: url("../images/cardSpadesQ.png");
+}
+.noK .card-back {
+    background-image: url("../images/cardSpadesK.png");
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    
+}

@@ -1,0 +1,117 @@
+/*共通スタイル*/
+html {
+    font-size: 0.625rem;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: .1em;
+    color: black;
+}
+
+* {
+    transition: .5s;
+}
+
+/*---------------
+カード
+-----------------*/
+/* カード全体 */
+.card-item {
+    width: 300px;
+    height: 350px;
+    margin: 100px auto;
+    perspective: 600px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 5px;
+}
+
+
+/* カードの表面 */
+.card-front {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.2);
+
+    background-image: url(../nct.jpg);
+    background-position: center top; /*背景画像の表示位置 を指定*/
+    background-size: cover; /*背景画像の大きさ（サイズ） を指定*/
+    /* cover は「背景エリア全体を覆うように拡大または縮小」する */
+}
+
+/* カード裏面 */
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: black;
+    background-image: url(../haechan.jpg);
+
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    /* ✨感を出す */
+    filter: brightness(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+
+}
+.card-back::before {
+    content: '';
+    position: absolute; /* 親要素（card-back）の上にピタッと重ねる */
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+        120deg,  /* 斜め方向に光が走る */
+        transparent 0%, /* 透明 → */
+        rgba(255, 255, 255, 0.5) 50%, /* 真ん中だけ少し白く光る */
+        transparent 100% /* → また透明に戻る */
+        );
+    opacity: 0;  /* 最初は見えない */
+    transform: translateX(-100%); /* 左の外側からスタート */
+}
+.card-item:hover .card-back::before {
+    animation: shine 0.6s ease-out;
+}
+
+@keyframes shine {/* 動きをコントロールするアニメーション定義 */
+    0% {
+        transform: rotate(0deg) translateX(-100%); /* 左の外からスタート */
+        opacity: 0; /* 最初は見えない */
+    }
+    30% {
+        opacity: 1; /* 少し光が現れる */
+    }
+    100% {
+        transform:translateX(100%); /* 右に通り過ぎる */
+        opacity: 0; /* 通り過ぎたら消える */
+    }
+}
+
+/* ホバー時にカードを回転させる */
+.card-item:hover .card-front {
+    transform: rotateY(180deg);
+}
+.card-item:hover .card-back {
+    transform: rotateY(0);
+}
+
+
