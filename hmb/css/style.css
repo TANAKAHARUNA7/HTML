@@ -1,0 +1,90 @@
+html {
+    font-family: 'M PLUS 1', sans-serif;
+    overflow: hidden;
+}
+main,footer {
+    text-align: center;
+    padding: 100px;
+}
+#header {
+    width: 90%;
+    max-width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 非アクティブ */
+#hmb {
+    width: 32px;
+    height: 28px;
+    cursor: pointer;
+    position: relative;
+    z-index: 30;
+}
+#hmb span {
+    width: 32px;
+    height: 3px;
+    display: block;
+    background-color: #000000;
+    border-radius: 2px;
+    position: absolute;
+    transition: .2s;
+}
+#hmb span:first-child { top: 0; }
+#hmb span:nth-child(2){ top:12px; }
+#hmb span:last-child { top: 24px; }
+nav {
+    position: fixed; /*固定表示*/
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: mediumpurple;
+    z-index: 20; /*他の要素よりも手前に*/
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition-property: all;
+    transition-duration: .2s;
+}
+nav ul li a{
+    background-color: orange;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/* アクティブ */
+.active #hmb span:first-child{
+    top: 12px;
+    transform: rotate(45deg);
+}
+.active #hmb span:nth-child(2) {
+    opacity: 0;
+}
+.active #hmb span:last-child {
+    top: 12px;
+    transform: rotate(-45deg);
+}
+.active nav {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+    z-index: 10;
+}
