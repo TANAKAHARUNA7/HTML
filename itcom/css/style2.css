@@ -1,0 +1,244 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: #ffffff;
+    background-color: #16161a;
+}
+header {
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+header .container {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+header .logo {
+    font-size: 24px;
+}
+.row ul {
+    display: flex;
+}
+.row ul li {
+    margin-left: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.section1 {
+    background-image: url(/images/image1.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;/*並びを自由に　デフォルトがcolなだけ*/
+    align-items: center; /*上下中央*/
+}
+.section1 .filter {
+    width: 100%;
+    height: 100%;
+    background-color: #16161a;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.section1 .container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.section1 .heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #2cb67d;
+}
+
+.section1 h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.section1 .text {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.section1 a {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 40px 20px;
+    display: inline-block;
+    background-color: #7f5af0;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    transition-duration: .2s;
+}
+.section1 a:hover {
+    background-color: #2cb67d;
+}
+.section2 {
+    margin-bottom: 45px;
+   
+}
+.section2 .container {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.section2 .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transform: translateY(-48px);
+    z-index: 2;
+    position: relative;
+}
+.section2 .col {
+    width: 32%;
+    background-color: #ffffff;
+    color: #16161a;
+    padding: 20px;
+}
+
+.section2 img {
+    background-color: #7f5af0;
+    padding: 10px;
+    border-radius: 9px;
+    width: 60px;
+    margin-bottom: 16px;
+}
+.section2 h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.section2 hr {
+    border: solid 2px #2cb67d;
+    margin-bottom: 16px;
+    width: 48px;
+}
+.section2 .text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.section3 {
+    padding-top: 45px;
+    margin-bottom: 60px;
+}
+.section3 .container {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+.section3 .row {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+     margin-bottom: 60px;
+}
+.section3 .col {
+    width: 46%;
+
+} 
+.section3 h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+.section3 hr {
+    width: 60px;
+    border: solid 2px #2cb67d;
+    margin-bottom: 20px;
+}
+.section3 .text {
+    line-height: 1.5;
+}
+.section4 .container{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.section4 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+.section4 h2 {
+    font-weight: 700;
+    font-size:  28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section4 hr {
+    width: 60px;
+    border: solid 2px #2cb67d;
+    margin-bottom: 24px;
+    margin: 0 auto 40px;
+}
+.section4 ul {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.section4 ul li{
+    margin-bottom: 20px;
+    border: solid 2px #ffffff;
+
+    padding: 16px 24px;
+}
+.section4 .date {
+    color: #7f5af0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.section5 {
+    padding-top: 60px;
+    margin-bottom: 130px;
+}
+.section5 .container {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+.section5 h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section5 hr {
+    border: solid 2px #2cb67d;
+    width: 60px;
+    margin: 0 auto 40px;
+}
+.section5 form {
+    max-width: 540px;
+    margin: 0 auto;
+}
+.section5 label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.section5 input, .section5 textarea{
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    margin-bottom: 30px;
+    color: #16161a;
+}

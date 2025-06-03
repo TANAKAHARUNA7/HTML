@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ITcom</title>
+
+    <!-- リセットCSS 読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
+    />
+
+    <!-- style.css 読み込み -->
+    <link rel="stylesheet" href="./css/style2.css" />
+
+    <!-- Google Fonts 読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <a href="./" class="logo">ITcom</a>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- セクション1 -->
+      <section class="section1">
+        <div class="container">
+          <p class="heading">TechSolutions</p>
+          <h1>未来をつくる<br />テクノロジーソリューション</h1>
+          <p class="text">
+            Shaping the Future with Innovative Technology Solutions
+          </p>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="filter"></div>
+      </section>
+      <!-- セクション2⃣ -->
+      <section class="section2">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="./images/icon1.png" alt="カスタムソフトイェア開発" />
+              <h2>カスタムソフトウェア開発</h2>
+              <hr />
+              <p class="text">
+                私たちはビジネスのニーズに合わせてカスタマイズされた
+                ソフトウェアソリューションを提供します。
+                効率的で使いやすいアプリケーションを開発し、
+                ビジネスプロセスを最適化します。
+              </p>
+            </div>
+            <div class="col">
+              <img src="./images/icon2.png" alt="クラウドソリューション" />
+              <h2>クラウドソリューション</h2>
+              <hr />
+              <p class="text">
+                クラウドテクノロジーを活用し、スケーラブルで柔軟なソリューションを提供します。
+                ビジネスデータの安全な保管とアクセスを確保します。
+              </p>
+            </div>
+            <div class="col">
+              <img src="./images/icon3.png" alt="データ分析" />
+              <h2>データ分析</h2>
+              <hr />
+              <p class="text">
+                当社のデータ分析サービスは情報を把握し、トレンドを特定し、
+                ビジネスの成長を促進するためにデータの力を活用するお手伝いをするために設計されています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- セクション3⃣ -->
+      <section class="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>テクノロジーでビジネスを革新しよう</h2>
+              <hr />
+              <p class="text">
+                ITcomは革新的なテクノロジーソリューションを提供し、クライアントのビジネスを強化します。<br />
+                <br />
+                私たちの専門家のチームは、ビジョンを実現し、競争力を高めるためのパートナーとしてお手伝いします。
+              </p>
+            </div>
+            <div class="col">
+              <img src="/images/image2.jpg" alt="テクノロジーでビジネスを革新しよう" width="100%"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>テクノロジーへの情熱と革新の原動力</h2>
+              <hr />
+              <p class="text">
+                ITcomは単なるテクノロジーの提供者ではありません。<br />
+                私たちは情熱と創造性をもってテクノロジーを活用し、革新的なソリューションを提供します。<br />
+                <br />
+                私たちの専門家たちは、お客様のビジョンを共有し、ビジネスにテクノロジーの力を結集させます。
+              </p>
+            </div>
+            <div class="col">
+              <img src="/images/image3.jpg" alt="テクノロジーへの情熱と革新の原動力" width="100%"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- セクション4 -->
+       <section class="section4">
+        <div class="container">
+          <h2>NEWS</h2>
+          <hr>
+          <ul>
+            <li>
+              <p class="date">2024.12.30</p>
+              <p >新製品の発表をしました</p>
+            </li>
+            <li>
+              <p class="date">2024.12.30</p>
+              <p >ウェビナーの開催をしました</p>
+            </li>
+            <li>
+              <p class="date">2024.12.30</p>
+              <p >クラウドソリューションの新機能を追加しました</p>
+            </li>
+            <li>
+              <p class="date">2024.12.30</p>
+              <p >ホームページをリニューアルしました</p>
+            </li>
+          </ul>
+        </div>
+       </section>
+       <!-- お問い合わせ -->
+        <section class="section5">
+          <div class="container">
+            <h2>お問い合わせ</h2>
+            <hr>
+            <form action="./submit.php" method="post">
+              <label for="name">お名前</label>
+              <input type="text" name="name" id="name" required>
+              <label for="email">メール</label>
+              <input type="email" name="email" id="email" required>
+              <label for="message">お問い合わせ内容</label>
+              <textarea name="message" id="message" rows="6"></textarea>
+              <input type="submit" value="送信">
+            </form>
+          </div>
+          
+        </section>
+    </main>
+
+    <footer>© ITcom Inc.</footer>
+  </body>
+</html>
